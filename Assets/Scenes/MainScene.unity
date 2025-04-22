@@ -22137,6 +22137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3329065076754207118, guid: 6dcb40329b8fb5a40bf24c506d692391, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -82
+      objectReference: {fileID: 0}
     - target: {fileID: 6106793195820981628, guid: 6dcb40329b8fb5a40bf24c506d692391, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -22220,8 +22224,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5691337791673751962, guid: 6dcb40329b8fb5a40bf24c506d692391, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2547179351211750248}
   m_SourcePrefab: {fileID: 100100000, guid: 6dcb40329b8fb5a40bf24c506d692391, type: 3}
+--- !u!1 &2547179351211750247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5691337791673751962, guid: 6dcb40329b8fb5a40bf24c506d692391, type: 3}
+  m_PrefabInstance: {fileID: 2547179351211750246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &2547179351211750248
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2547179351211750247}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d8457a540d9f7214483721b116809fab, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: d8457a540d9f7214483721b116809fab, type: 2}
+  - {fileID: 7400000, guid: 0008542ef01fd344a916cd8b0ca3e482, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!33 &2554772987189750925
 MeshFilter:
   m_ObjectHideFlags: 0
