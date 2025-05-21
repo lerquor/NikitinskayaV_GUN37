@@ -1,48 +1,38 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
-class Program
+namespace Arrays
 {
-    static void Main(string[] args)
+    internal class Program
     {
-        Console.WriteLine("Please, write the first number");
-        if (!int.TryParse(Console.ReadLine(), out int a))
+        static void Main(string[] args)
         {
-            Console.WriteLine("Error!");
-            return;
-        }
-        Console.WriteLine("Please, write the second number");
+            //Task 1
+            int[] fibonacciNumbers = { 0, 1, 1, 2, 3, 5, 8, 13 };
 
-        if (!int.TryParse(Console.ReadLine(), out int b))
-        {
-            Console.WriteLine("Error!");
-            return;
-        }
-        Console.WriteLine("Please, write a sign (&, | or ^)");
-        var sign = Console.ReadLine();
-        var number = 0;
+            //Task 2
+            string[] Months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
 
-        if (sign.Length > 1 || sign.Length == 0)
-        {
-            Console.WriteLine("Wrong sign");
-            return;
-        }
-        switch (sign[0])
-        {
-            case '|':
-                number = a | b;
-                Console.WriteLine(number + " " + Convert.ToString(number, 2) + " " + Convert.ToString(number, 16));
-                break;
-            case '&':
-                number = a & b;
-                Console.WriteLine(number + " " + Convert.ToString(number, 2) + " " + Convert.ToString(number, 16));
-                break;
-            case '^':
-                number = a ^ b;
-                Console.WriteLine(number + " " + Convert.ToString(number, 2) + " " + Convert.ToString(number, 16));
-                break;
-            default: 
-                Console.WriteLine("Wrong sign!");
-                break;
+            //Task 3
+            int[][] Array234 = new int[3][] { new[] { 2, 3, 4 }, new[] { 4, 9, 16 }, new[] { 8, 27, 64 } };
+
+            //Task 4
+            double[][] tripleArray = new double[3][] { new[] { 1.0, 2, 3, 4, 5 }, new[] { Math.E, Math.PI }, new[] {Math.Log10(1), Math.Log10(10), Math.Log10(100), Math.Log10(1000)} };
+
+            //Task 5
+            int[] array = { 1, 2, 3, 4, 5 };
+            int[] array2 = { 7, 8, 9, 10, 11, 12, 13 };
+
+            Array.Copy(array, 0, array2, 0, 2);
+
+            //Task 6
+            
+            Array.Resize(ref array, array.Length * 2);
+            
         }
     }
 }
