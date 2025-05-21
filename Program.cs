@@ -17,6 +17,7 @@ class Program
             Console.WriteLine("Error!");
             return;
         }
+        Console.WriteLine("Please, write a sign (&, | or ^)");
         var sign = Console.ReadLine();
         var number = 0;
 
